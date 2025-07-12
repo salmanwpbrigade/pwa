@@ -1,0 +1,86 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRVNZixlCdU0yuL_NNlk3h7TgnNJwFfNLjyRHDI8gRvuK6aKCwQPoIgU8Tcdfp9ivrgLg&usqp=CAU') no-repeat center center fixed;
+  background-size: cover;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+  z-index: -1;
+}
+
+/* Main App container */
+.App {
+  padding: 2rem;
+  min-height: 100vh;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.App h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: #00e6e6;
+}
+
+
+form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+
+input {
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+
+button {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  background: linear-gradient(to right, #00e6e6, #0077ff);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #0077ff, #00e6e6);
+}
+
+
+.App div h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.App div p {
+  font-size: 1.2rem;
+  margin: 0.3rem 0;
+}
